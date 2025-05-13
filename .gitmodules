@@ -1,0 +1,3 @@
+[submodule "evpv"]
+	path = evpv
+	url = https://github.com/evpv-simulator/evpv

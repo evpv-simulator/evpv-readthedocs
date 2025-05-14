@@ -1,0 +1,8 @@
+/* Prevent RTD sidebar style from shrinking our GitHub badge */
+.github-org-badge {
+  height: auto !important;
+  width: auto !important;
+  background: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}

@@ -1,9 +1,8 @@
-{% extends "!layout.html" %}
-
-{% block github_link %}
-    <li class="wy-menu">
-        <a href="https://github.com/evpv-simulator" target="_blank">
-            View on GitHub
-        </a>
-    </li>
+{% block header %}
+  {{ super() }}
+  <div style="position: absolute; top: 15px; right: 15px;">
+    <a href="https://github.com/evpv-simulator" target="_blank" style="color: white; font-weight: bold;">
+      GitHub: evpv-simulator
+    </a>
+  </div>
 {% endblock %}

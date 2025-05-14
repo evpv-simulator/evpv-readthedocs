@@ -1,4 +1,4 @@
-What is EVPV Simulator?
+What is EVPV-simulator?
 ========================
 
 **The EVPV-simulator (Electric Vehicles - PhotoVoltaics Simulator)** is an open-source Python tool designed to calculate the spatio-temporal charging needs of privately-owned electric vehicles (EVs) and the potential for solar photovoltaics (PV) to meet these needs in a given region of interest.
@@ -58,6 +58,19 @@ Standout Features
 
 - **PV system presets**:  
   Easily generates PV production and EV–PV complementarity metrics for common PV system types (e.g., rooftop, ground-mounted, with or without tracking).
+
+Code
+----
+The EVPV-Simulator code is fully open-source and provided under GNU General Public License
+
+    the code can’t become part of a closed-source commercial software product
+
+    any future changes and improvements to the code remain free and open
+
+Source code can be downloaded from GitHub.
+
+This model is a work in progress and will be updated accordingly. If you want to subscribe to the openTEPES model updates send an email to andres.ramos@comillas.edu
+
 
 Citing EVPV-Simulator
 ---------------------

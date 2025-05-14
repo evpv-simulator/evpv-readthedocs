@@ -45,10 +45,10 @@ Standout Features
   The model can be run using open-source geospatial data sourced from OpenStreetMap, making it applicable to any location.
 
 - **Calibration-free mobility demand model for home-to-work commuting**:  
-  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model (`Lenormand <https://doi.org/10.1016/j.jtrangeo.2015.12.008>`_ ). Users can also incorporate additional weekday travel demand (e.g., shopping or leisure) by adding extra kilometers traveled.
+  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model (`Lenormand et al <https://doi.org/10.1016/j.jtrangeo.2015.12.008>`_). Users can also incorporate additional weekday travel demand (e.g., shopping or leisure) by adding extra kilometers traveled.
 
 - **Charging-decision modeling**:  
-  Uses a state-of-the-art model based on state-of-charge (SoC) thresholds to determine whether vehicles charge on a given day, following `Pareschi <https://doi.org/10.1016/j.apenergy.2020.115318>`_ .
+  Uses a state-of-the-art model based on state-of-charge (SoC) thresholds to determine whether vehicles charge on a given day, following `Pareschi et al <https://doi.org/10.1016/j.apenergy.2020.115318>`_.
 
 - **Flexible EV fleet and charging infrastructure**:  
   Supports any user-defined scenario regarding EV fleet properties and charging infrastructure, including also a maximum charging power per vehicle.

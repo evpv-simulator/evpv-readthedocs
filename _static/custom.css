@@ -11,3 +11,8 @@
 .wy-side-nav-search {
   background-color: #F2F2F2 !important;  /* Replace with the desired color */
 }
+
+/* Remove the version switch */
+.switch-menus {
+  display: none !important;
+}

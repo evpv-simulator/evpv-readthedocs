@@ -25,18 +25,13 @@ Welcome to EVPV-Simulator's Documentation
    :caption: Examples
 
    examples/example1
-   examples/example2
 
 .. toctree::
    :maxdepth: 2
    :caption: Methodology
 
    methodology/overview
-   methodology/vehicle_allocation
-   methodology/mobility_simulation
-   methodology/energy_modeling
-   methodology/charging_strategies
-   methodology/cost_analysis
+
 
 .. toctree::
    :maxdepth: 2
@@ -49,5 +44,3 @@ Welcome to EVPV-Simulator's Documentation
    :caption: Appendix
 
    appendix/references
-   appendix/glossary
-   appendix/license

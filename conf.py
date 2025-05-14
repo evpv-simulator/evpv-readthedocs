@@ -51,3 +51,7 @@ html_context = {
     "github_version": "main",  # or "master"
     "conf_py_path": "/",  # path to your docs root
 }
+
+html_theme_options = {
+    "github_url": "https://github.com/evpv-simulator"  # Direct link to the org page
+}

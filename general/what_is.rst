@@ -34,7 +34,7 @@ The **evpv-simulator** model has three main objectives and corresponding outputs
    :width: 100%
    :align: center
 
-   *EVPV-Simulator methodology overview. Note that some optional input parameters and additional outputs are not shown.*
+.. centered:: *EVPV-Simulator methodology overview. Note that some optional input parameters and additional outputs are not shown.*
 
 Standout Features
 -----------------

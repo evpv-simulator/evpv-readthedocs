@@ -1,14 +1,14 @@
 evpv-tools
 ==========
 
-This folder contains various Python scripts designed to support and extend the functionality of the **EVPV-simulator** model. These tools assist users in preparing input datasets, post-processing model outputs, and performing additional geospatial or statistical analyses.
+The repository `evpv_tools <https://github.com/evpv-simulator/evpv-tools>`_ contains various Python helper scripts designed to support and extend the functionality of the **EVPV** model. These tools assist users in preparing input datasets, post-processing model outputs, and performing additional analyses.
 
 Current Available Scripts
 -------------------------
 
 As of now, the repository includes the following scripts:
 
-1. **extract_pois_from_osm.py**
+1. ``extract_pois_from_osm.py``
 
    - **Purpose**: Retrieves Points of Interest (POIs) OR Workplaces from OpenStreetMap using the OSMNx library.
    - **Functionality**:
@@ -20,8 +20,9 @@ As of now, the repository includes the following scripts:
      - `center_points.csv`: CSV file of unique coordinates with occurrence counts.
    - **Dependencies**:
      - `geopandas`, `pandas`, `numpy`, `shapely`, `osmnx`
+     
 
-2. **compare_road_and_euclidian_distance.py**
+2. ``compare_road_and_euclidian_distance.py``
 
    - **Purpose**: Compares Euclidean and road distances between randomly generated coordinates within a bounding box.
    - **Functionality**:
@@ -36,7 +37,8 @@ As of now, the repository includes the following scripts:
      - `geopy`: Used to calculate Euclidean distances.
      - `pandas`: For data manipulation and CSV file creation.
 
-3. **analyse_fuel_and_co2_savings.py**
+
+3. ``analyse_fuel_and_co2_savings.py``
 
    - **Purpose**: Assesses the fuel cost and CO₂ emission savings from switching from ICEVs to EVs based on simulated vehicle flow and travel distances from the EVPV model.
    - **Functionality**:

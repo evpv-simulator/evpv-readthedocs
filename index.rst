@@ -1,20 +1,53 @@
-.. evpv documentation master file, created by
-   sphinx-quickstart on Tue Sep 24 18:34:20 2024.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. EVPV-Simulator documentation master file
 
-Welcome to evpv's documentation!
-================================
+Welcome to EVPV-Simulator's Documentation
+=========================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: General
 
-   evpv
+   Home <self>
+   general/what_is
+   general/release_notes
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: User Guide
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   user_guide/installation
+   user_guide/basic_usage
+   user_guide/advanced_usage
+   user_guide/evpv_tools
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples
+
+   examples/example1
+   examples/example2
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Methodology
+
+   methodology/overview
+   methodology/vehicle_allocation
+   methodology/mobility_simulation
+   methodology/energy_modeling
+   methodology/charging_strategies
+   methodology/cost_analysis
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
+   api/reference
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Appendix
+
+   appendix/references
+   appendix/glossary
+   appendix/license

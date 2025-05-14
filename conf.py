@@ -44,11 +44,5 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 html_show_sourcelink = False
 
-html_context = {
-    "display_github": True,
-    "github_user": "evpv-simulator",
-    "github_repo": "",  # Leave this empty
-    "github_version": "main",  # Still required, even if you don’t use it
-    "conf_py_path": "/docs/",  # Adjust as needed
-}
+html_context = {}
 

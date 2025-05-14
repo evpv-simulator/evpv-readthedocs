@@ -1,8 +1,11 @@
-{% block header %}
+{% extends "sphinx_rtd_theme/layout.html" %}
+
+{% block branding %}
   {{ super() }}
-  <div style="position: absolute; top: 15px; right: 15px;">
-    <a href="https://github.com/evpv-simulator" target="_blank" style="color: white; font-weight: bold;">
-      GitHub: evpv-simulator
+  <p style="margin-top:0.5em;">
+    <a href="https://github.com/evpv-simulator" target="_blank" rel="noopener">
+      <img src="https://img.shields.io/badge/GitHub-evpv--simulator-blue?logo=github"
+           alt="GitHub Org">
     </a>
-  </div>
+  </p>
 {% endblock %}

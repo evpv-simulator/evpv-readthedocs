@@ -30,9 +30,9 @@ All input parameters are defined and explained in the configuration file you cop
 
 In addition to numerical and model-specific parameters, you'll need to provide paths to the following four geospatial data files:
 
-- **Region of interest**: A GeoJSON file defining the boundary of your study area. For most administrative regions, you can download this from the [GADM dataset](https://gadm.org/).
-- **Residential population**: A `.tif` raster file showing population density, in the WGS84 coordinate system. We recommend using the [GHS-POP dataset](https://human-settlement.emergency.copernicus.eu/download.php?ds=pop) at the lowest available resolution.
-- **List of workplaces**: A CSV file with the following columns: `name`, `latitude`, `longitude`, and `weight`. You can generate this manually from local data or automatically extract it from OpenStreetMap using the helper script in `scripts/extract_pois_from_osm.py`.
+- **Region of interest**: A GeoJSON file defining the boundary of your study area. For most administrative regions, you can download this from the `GADM dataset <https://gadm.org/>`_.
+- **Residential population**: A `.tif` raster file showing population density, in the WGS84 coordinate system. We recommend using the `GHS POP dataset <https://human-settlement.emergency.copernicus.eu/download.php?ds=pop>`_ at the highest resolution.
+- **List of workplaces**: A CSV file with the following columns: `name`, `latitude`, `longitude`, and `weight`. You can generate this manually using you own data or automatically extract it from OpenStreetMap using the helper script in `evpv.tools`.
 - **List of POIs (Points of Interest)**: Same format and process as for workplaces. Use the same script but with modified inputs.
 
 .. note::
@@ -42,6 +42,6 @@ Model Outputs
 -------------
 
 After running the simulation, the model generates output files organized into three main subfolders:
-- `Mobility/`: Data and interactive maps related to the mobility demand simulation. Includes vehicle flows, travel distances, and aggregated data for the region of interest.
-- `ChargingDemand/`: Charging demand outputs, including spatial and temporal demand per vehicle and per traffic zone. Also includes HTML maps for visualization.
-- `EVPV/`: PV production curves and EV–PV complementarity indicators.
+- **Mobility/**: Data and interactive maps related to the mobility demand simulation. Includes vehicle flows, travel distances, and aggregated data for the region of interest.
+- **ChargingDemand/**: Charging demand outputs, including spatial and temporal demand per vehicle and per traffic zone. Also includes HTML maps for visualization.
+- **EVPV/**: PV production curves and EV–PV complementarity indicators.

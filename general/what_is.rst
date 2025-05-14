@@ -1,10 +1,6 @@
 What is EVPV Simulator?
 ========================
 
-.. image:: /_static/logo.jpg
-   :width: 100%
-   :align: center
-
 **The EVPV-simulator (Electric Vehicles - PhotoVoltaics Simulator)** is an open-source Python tool designed to calculate the spatio-temporal charging needs of privately-owned electric vehicles (EVs) and the potential for solar photovoltaics (PV) to meet these needs in a given region of interest.
 
 Tailored especially for urban contexts with limited mobility data, the simulator enables the endogenous estimation of daily mobility patterns by combining georeferenced datasets with advanced spatial trip distribution models.
@@ -34,7 +30,7 @@ The **evpv-simulator** model has three main objectives and corresponding outputs
 3. **EV-PV Complementarity.**  
    Using PVLib and PVGIS weather data, the tool simulates the local hourly PV production over a given year. It then assesses how much of the EV charging demand can be met by solar energy, generating key performance indicators like self-sufficiency or self-consumption potentials.
 
-.. image:: /_static/model_overview_3.png
+.. image:: /_static/model_overview_3.jpg
    :width: 100%
    :align: center
 

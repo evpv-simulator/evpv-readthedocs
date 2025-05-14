@@ -3,12 +3,12 @@ Basic usage
 
 After installation, you can run the **EVPV model in command-line mode**. This is ideal for users who are not familiar with Python or who want to quickly conduct a simple case study.
 
-First, create a configuration file by copying an existing example such as the [Addis Ababa example](https://github.com/evpv-simulator/evpv-examples). Update it with your own input values and ensure that all required geospatial input data is available (see the config file and `input/` folder for guidance).
+First, create a configuration file by copying an existing example such as the `Addis_Ababa <https://github.com/evpv-simulator/evpv-examples>`_ example case study. Update the configuration file with your own parameters and ensure that all required geospatial input data is available (see the config file and `input/` folder for guidance).
 
 .. note::
-    We recommend starting by running the Addis Ababa example to get familiar with the workflow. The easiest way to access all necessary files is to download the full GitHub repository with examples as a ZIP file, extract it and copy the contents of the Addis Ababa example folder into the directory of your choice.
+    We recommend starting by running the Addis Ababa example to get familiar with the workflow. The easiest way to access all necessary files is to `download the GitHub repository containing the examples as a ZIP file <https://github.com/evpv-simulator/evpv-examples/archive/refs/heads/main.zip>`_, extract it and copy the contents of the Addis Ababa example folder into the directory of your choice.
 
-Once your config file and geospatial input data are ready, open a terminal, activate your conda environment (optional), and run:
+Once your config file and geospatial input data are ready, open a terminal, activate your virtual environment (optional), and run:
 
 .. code-block:: bash
 
@@ -21,12 +21,10 @@ You’ll be prompted to enter the path to your config file:
     Enter the path to the python configuration file: C:\Users\(...)\config.py
 
 .. warning::
-    Use absolute paths in the config file, or start the terminal in the same directory to use relative paths.
+    Use absolute paths in both in the terminal and in the config file, or start the terminal in the same directory  as the config file to use relative paths.
 
-.. image:: docs/usage.gif
-   :alt: Step-by-step run process for the Addis Ababa example
-
-**Input parameters and required geospatial data files**
+Model input parameters and required data
+----------------------------------------
 
 All input parameters are defined and explained in the configuration file you copied.
 
@@ -40,7 +38,8 @@ In addition to numerical and model-specific parameters, you'll need to provide p
 .. note::
     Need help in gathering the needed geospatial data for your own case study? See the `evpv.tools`.
 
-**Model Outputs**
+Model Outputs
+-------------
 
 After running the simulation, the model generates output files organized into three main subfolders:
 - `Mobility/`: Data and interactive maps related to the mobility demand simulation. Includes vehicle flows, travel distances, and aggregated data for the region of interest.

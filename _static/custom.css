@@ -6,3 +6,8 @@
   padding: 0 !important;
   border-radius: 0 !important;
 }
+
+/* Change the background color of the entire sidebar container */
+.wy-side-nav-search {
+  background-color: #F2F2F2 !important;  /* Replace with the desired color */
+}

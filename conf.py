@@ -42,3 +42,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
+html_show_sourcelink = False
+
+html_context = {
+    "display_github": True,
+    "github_user": "evpv-simulator",  # Organization name
+    "github_repo": "",  # Leave this empty for the organization page
+    "github_version": "main",  # or "master"
+    "conf_py_path": "/",  # path to your docs root
+}

@@ -21,7 +21,7 @@ Overview of the Model
 
 The **evpv-simulator** model has three main objectives and corresponding outputs (as shown in Fig. 1, which illustrates the model’s key inputs, outputs, and processing steps):
 
-1. **Mobility Demand Estimation.**  
+1. **Mobility Demand Estimation.** 
    Based on a user-defined region of interest and associated geospatial input data (population density, workplaces, points of interest (POIs), and number of EVs to simulate), the tool divides the region of interest into traffic zones and assesses the mobility demand for commuting by simulating origin-destination for all EVs.
 
 2. **Charging Demand Analysis.**  
@@ -38,23 +38,25 @@ The **evpv-simulator** model has three main objectives and corresponding outputs
 
 Standout Features
 -----------------
+- **Spatial and temporal charging demand**:  
+  The model calculates both the spatial charging demand (at a user-defined resolution) and the temporal charging demand, providing a detailed understanding of when and where charging is needed.
 
-- **Calibration-free mobility demand model for home-to-work commuting**  
-  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model (`Lenormand <https://doi.org/10.1016/j.jtrangeo.2015.12.008>`_ ).
+- **Open-data powered modelling**:  
+  The model can be run using open-source geospatial data sourced from OpenStreetMap, making it applicable to any location.
 
-- **Mobility demand for other purposes**  
-  Although focused on commuting, the model allows users to include additional weekday mobility (e.g., shopping, leisure) via an optional ``km_per_capita_offset`` parameter.
+- **Calibration-free mobility demand model for home-to-work commuting**:  
+  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model (`Lenormand <https://doi.org/10.1016/j.jtrangeo.2015.12.008>`_ ). Users can also incorporate additional weekday travel demand (e.g., shopping or leisure) by adding extra kilometers traveled.
 
-- **Charging-decision modeling**  
+- **Charging-decision modeling**:  
   Uses a state-of-the-art model based on state-of-charge (SoC) thresholds to determine whether vehicles charge on a given day, following `Pareschi <https://doi.org/10.1016/j.apenergy.2020.115318>`_ .
 
-- **Flexible EV fleet and charging infrastructure**  
-  Supports any user-defined scenario regarding EV fleet properties and charging infrastructure, including maximum charging power per vehicle.
+- **Flexible EV fleet and charging infrastructure**:  
+  Supports any user-defined scenario regarding EV fleet properties and charging infrastructure, including also a maximum charging power per vehicle.
 
-- **Smart charging ready**  
-  Simulates uncontrolled ("dumb") charging by default. Includes a basic rule-based peak shaving algorithm that shifts charging within arrival–departure windows to smooth demand. Output can be used for more advanced smart charging strategies.
+- **Smart charging ready**:  
+  Simulates uncontrolled ("dumb") charging by default. But the output can easily be used for more smart charging strategies. Also includes a rule-based peak shaving algorithm that shifts charging within arrival–departure windows to smooth the demand.
 
-- **PV system presets**  
+- **PV system presets**:  
   Easily generates PV production and EV–PV complementarity metrics for common PV system types (e.g., rooftop, ground-mounted, with or without tracking).
 
 Citing EVPV-Simulator

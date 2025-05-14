@@ -42,6 +42,7 @@ Model Outputs
 -------------
 
 After running the simulation, the model generates output files organized into three main subfolders:
+
 - **Mobility/**: Data and interactive maps related to the mobility demand simulation. Includes vehicle flows, travel distances, and aggregated data for the region of interest.
 - **ChargingDemand/**: Charging demand outputs, including spatial and temporal demand per vehicle and per traffic zone. Also includes HTML maps for visualization.
 - **EVPV/**: PV production curves and EV–PV complementarity indicators.

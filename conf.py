@@ -46,9 +46,9 @@ html_show_sourcelink = False
 
 html_context = {
     "display_github": True,
+    "github_user": "evpv-simulator",
+    "github_repo": "",  # Leave this empty
+    "github_version": "main",  # Still required, even if you don’t use it
+    "conf_py_path": "/docs/",  # Adjust as needed
 }
-html_theme_options = {
-    "github_url": "https://github.com/evpv-simulator"  # Direct link to the org page
-}
-
 

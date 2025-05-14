@@ -1,10 +1,10 @@
-{% extends "sphinx_rtd_theme/layout.html" %}
+{% extends "!layout.html" %}
 
-{% block sidebar_footer %}
+{% block footer %}
   {{ super() }}
-  <p style="margin-top:0.5em;">
+  <div style="margin-top: 1em;">
     <a href="https://github.com/evpv-simulator" target="_blank" rel="noopener">
-      <strong>GitHub Org ↗</strong>
+      <img src="https://img.shields.io/badge/GitHub-evpv--simulator-blue?logo=github" alt="GitHub Org">
     </a>
-  </p>
+  </div>
 {% endblock %}

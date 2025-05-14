@@ -36,9 +36,9 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+html_logo = "img/logo_small.png"
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
@@ -46,11 +46,9 @@ html_show_sourcelink = False
 
 html_context = {
     "display_github": True,
-    "github_user": "evpv-simulator",  # Organization name
-    "github_repo": "",  # Leave this empty for the organization page
-    "github_version": "main",  # or "master"
-    "conf_py_path": "/",  # path to your docs root
+}
+html_theme_options = {
+    "github_url": "https://github.com/evpv-simulator"  # Direct link to the org page
 }
 
-github_url = "https://github.com/evpv-simulator"  # Direct link to the org page
 

@@ -11,7 +11,7 @@ Advanced users can write custom Python scripts by importing and interacting with
    from evpv.vehiclefleet import VehicleFleet
    # etc.
 
-For full class and method details, consult the :doc:`API reference <api>`. To see how the classes work together in practice, we recommend starting explore the various `Examples <https://docs.conda.io/en/latest/miniconda.html>`_
+For full class and method details, consult the **API reference**. To see how the classes work together in practice, we recommend starting explore the various `Examples <https://github.com/evpv-simulator/evpv-examples>`_.
 
 Exploring the Codebase
 ----------------------

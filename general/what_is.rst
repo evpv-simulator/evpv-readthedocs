@@ -1,7 +1,7 @@
 What is EVPV Simulator?
 ========================
 
-.. image:: img/logo.jpg
+.. image:: _static/logo.jpg
    :width: 100%
    :align: center
 
@@ -34,7 +34,7 @@ The **evpv-simulator** model has three main objectives and corresponding outputs
 3. **EV-PV Complementarity.**  
    Using PVLib and PVGIS weather data, the tool simulates the local hourly PV production over a given year. It then assesses how much of the EV charging demand can be met by solar energy, generating key performance indicators like self-sufficiency or self-consumption potentials.
 
-.. image:: img/model_overview_3.png
+.. image:: _static/model_overview_3.png
    :width: 100%
    :align: center
 
@@ -44,14 +44,13 @@ Standout Features
 -----------------
 
 - **Calibration-free mobility demand model for home-to-work commuting**  
-  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model ([Lenormand et al.](https://doi.org/10.1016/j.jtrangeo.2015.12.008)).  
-  No local transport data is required, and OpenRouteService can be used for accurately evaluating road distances.
+  Estimates commuting transport demand by modeling vehicle flows between origins (homes) and destinations (workplaces) using a calibration-free gravity model (`Lenormand <https://doi.org/10.1016/j.jtrangeo.2015.12.008>`_ ).
 
 - **Mobility demand for other purposes**  
   Although focused on commuting, the model allows users to include additional weekday mobility (e.g., shopping, leisure) via an optional ``km_per_capita_offset`` parameter.
 
 - **Charging-decision modeling**  
-  Uses a state-of-the-art model based on state-of-charge (SoC) thresholds to determine whether vehicles charge on a given day, following [Pareschi et al.](https://doi.org/10.1016/j.apenergy.2020.115318).
+  Uses a state-of-the-art model based on state-of-charge (SoC) thresholds to determine whether vehicles charge on a given day, following `Pareschi <https://doi.org/10.1016/j.apenergy.2020.115318>`_ .
 
 - **Flexible EV fleet and charging infrastructure**  
   Supports any user-defined scenario regarding EV fleet properties and charging infrastructure, including maximum charging power per vehicle.

@@ -7,13 +7,13 @@ About Examples
 The `evpv_examples <https://github.com/evpv-simulator/evpv-examples>`_ repository provides a collection of ready-to-use case studies, complete with all necessary input and configuration files. These examples can help you explore the capabilities of the EV-PV simulator and serve as blueprints for developing your own custom analyses. Each example includes all the required files to run it. When applicable, examples are provided with both a configuration file for execution in **basic mode** (using the command-line interface), and a Python run script for execution in **advanced mode** for more control.
 
 .. note::
-    To run one of the cases, first `DOWNLOAD <https://github.com/evpv-simulator/evpv-examples/archive/refs/heads/main.zip>`_, the repository containing the examples, extract it and copy the contents of the example folder into the directory of your choice.
+    To run one of the cases, first `DOWNLOAD <https://github.com/evpv-simulator/evpv-examples/archive/refs/heads/main.zip>`_ the repository containing the examples, extract it and copy the contents of the example folder into the directory of your choice.
     
 The following examples are available:
 
 - **AddisAbaba_Simple**: A simple yet complete case study on the city of Addis Ababa, showcasing the full set of core outputs (mobility demand, charging demand, and EV-PV complementarity). 
 
-Overview of the AddisAbaba_Simple example 
+Overview of the *AddisAbaba_Simple* example 
 -----------------------------------------
 
 This example case study simulates mobility demand, EV charging demand, and EV–PV synergy indicators in the administrative region of Addis Ababa. It models a simplified scenario that includes a basic EV fleet, user charging behavior at home, workplaces, and points of interest (POIs), and solar PV generation.
@@ -59,15 +59,29 @@ Folder structure and contents
 
   - `mobility_vis_VehicleAllocation.html`: HTML map showing the number of vehicles allocated to each zone (i.e., the origin zones for trips).
 
-- ``ChargingDemand/``: Charging demand results:
-  - `charging_profiles.csv`: Charging demand time series.
-  - `zone_charging_summary.csv`: Aggregated charging demand by zone.
-  - `charging_map.html`: Map showing charging demand per location.
 
-- ``EVPV/`` Photovoltaic production and EVPV indicators:
-  - `pv_production.csv`: Hourly solar output.
-  - `complementarity_metrics.csv`: Overlap between PV and EV demand.
-  - `pv_ev_match_plot.html`: Time-series plots comparing PV and EV profiles.
+- ``ChargingDemand/``: Contains results related to EV charging demand, both temporally and spatially:
+
+  - `charging_res_temporal_demand_profile.csv`: Time series of the raw charging power profile for each individual vehicle.
+
+  - `charging_res_temporal_demand_vehicle_properties.csv`: Metadata for each vehicle, including: charging frequency (days between charges), charging location, arrival and departure times. This file can be cross-referenced with the previous one using the vehicle ID.
+
+  - `charging_res_temporal_demand_aggregated.csv`:  Aggregated charging load curves by location type (home, work, POI), including: total charging power per time step, number of vehicles present at every location, number of vehicles actively charging.
+
+  - `charging_res_spatial_demand.csv`: Aggregated charging demand by traffic zone, including: total charging demand, number of charging vehicles per zone.
+
+  - `charging_vis_TotalDemand.html`: HTML map showing the total daily charging energy demand.
+
+  - `charging_vis_DemandPerVehicle.html`: HTML map showing the average energy demand per charging vehicle.
+
+  - `charging_vis_NumberVehiclesCharging.html`: HTML map showing the number of vehicles charging.
+
+
+- ``EVPV/``: Contains results related to photovoltaic (PV) energy production and EV–PV synergy indicators:
+
+  - `evpv_res_PVProduction.csv`: Hourly PV production output over a year, including also other metrics (performance ratio, capacity factor, ...).
+
+  - `evpv_res_DailyIndicators.csv`: Daily EV-PV complementarity indicators, including self-sufficiency, self-consumption, and excess PV production.
 
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^

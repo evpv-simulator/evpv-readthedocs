@@ -48,8 +48,7 @@ After running the simulation, results are saved in structured subfolders inside 
 
 Folder structure and contents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. list-table:: Simulation Output Files
+.. list-table::
    :widths: 20 30 50
    :header-rows: 1
 
@@ -57,7 +56,7 @@ Folder structure and contents
      - File
      - Description
 
-   * - Mobility/
+   * - ``Mobility/``
      - `mobility_res_TripDistribution_flows.csv`
      - Origin–destination matrix of vehicle flows between zones, including road and Euclidean distances.
 
@@ -73,7 +72,7 @@ Folder structure and contents
      - `mobility_vis_VehicleAllocation.html`
      - Map of vehicle allocation per zone, based on origin points.
 
-   * - ChargingDemand/
+   * - ``ChargingDemand/``
      - `charging_res_temporal_demand_profile.csv`
      - Time series of raw charging power for each vehicle on the days it charges.
 
@@ -101,14 +100,14 @@ Folder structure and contents
      - `charging_vis_NumberVehiclesCharging.html`
      - Map showing number of vehicles attempting to charge per zone.
 
-   * - EVPV/
+   * - ``EVPV/``
      - `evpv_res_PVProduction.csv`
      - Hourly PV energy production with performance metrics such as performance ratio and capacity factor.
 
    * -
      - `evpv_res_DailyIndicators.csv`
      - Daily EV–PV synergy indicators: self-sufficiency, self-consumption, and excess PV energy.
-     
+
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^
 Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. The graphs below were created from the raw results using the software OriginLab for demonstration purposes.

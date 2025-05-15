@@ -26,21 +26,21 @@ Inputs
 ------
 The configuration file is divided into several sections, each representing a key aspect of the simulation. Users are encouraged to explore the file directly for full documentation of available options. The default values define a simplified EV charging scenario for Addis Ababa:
 
-1. **General Settings**: Output paths and a name for the scenario.
+1. **General Settings**: Output path and a name for the scenario.
 
-2. **EV Fleet Properties**: Define the number of EVs to simulate and their properties of the EV fleet, including battery size and energy consumption.
+2. **EV Fleet Properties**: Define the number of EVs to simulate and their properties, including battery size and energy consumption per km.
 
-3. **Region of Interest**: Set the path to geospatial files defining study region using GIS files (GeoJSON and raster), along with data on population, workplaces, and POIs. Also, the spatial resolution
+3. **Region of Interest**: Set the path to geospatial files defining the region of interest boundaries (GeoJSON) and features (population, workplaces, POIs). Also, set the spatial resolution.
 
-4. **Mobility Simulation**: Configure parameters regarding the mobility demand (e.g., with or without routing APIs)
+4. **Mobility Simulation**: Configure parameters regarding the mobility demand simulation (e.g., with or without routing APIs)
 
-5. **Charging Behavior**: Define the charging scenario: share of people charging at the different location types (home, work, POIs), available charger powers, typical arrival times at home and work.
+5. **Charging Scenario**: Define the charging scenario: share of people charging at the different location types (home, work, POIs), available charger powers, typical arrival times at home and work.
 
-6. **PV Energy Production**: Set the PV system type and installed capacity, as well as the simulation year and time window.
+6. **PV Energy Production**: Set the PV system type (rooftop, groundmounted, ...), as well as the simulation year.
 
-7. **EV-PV Complementarity**: Define how EV charging and PV production are compared day-by-day, with optional stochastic variation.
+7. **EV-PV Complementarity**: Define the PV capacity and the time frame for extracting the EV-PV complementarity indicators.
 
-8. **Advanced Parameters**: Fine-tune the analysis with details such as traffic zone creation, trip distribution models, simulation resolution, and technical parameters for PV and charging efficiency.
+8. **Advanced Parameters**: Fine-tune the analysis with details such as traffic zone creation, trip distribution models, and technical parameters for PV.
 
 Outputs
 -------
@@ -49,21 +49,26 @@ After running the simulation, results are saved in structured subfolders inside 
 Folder structure and contents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- **`Mobility/`**: Data and maps related to simulated mobility demand simulation demand:
-  - `zone_flows.csv`: OD trip counts between zones.
-  - `zone_stats.csv`: Zone-level features (e.g., population, attraction).
-  - `mobility_map.html`: Interactive map of OD flows.
+- ``Mobility/``: Contains data and visualizations related to the simulated mobility demand:
 
-- **`ChargingDemand/`**: Charging demand results:
+  - `mobility_res_TripDistribution_flows.csv`: Origin–destination matrix showing the number of vehicles traveling between each pair of traffic zones. Includes additional metrics such as road distance and Euclidean distance between zones.
+
+  - `mobility_res_TripDistribution_aggregated_zone_metrics.csv`: Zone-level aggregated statistics: number of vehicles entering and leaving each zone, total distance traveled by incoming and outgoing vehicles, average travel distance per vehicle.
+
+  - `mobility_vis_Region.html`: HTML map displaying key features of each traffic zone.
+
+  - `mobility_vis_VehicleAllocation.html`: HTML map showing the number of vehicles allocated to each zone (i.e., the origin zones for trips).
+
+- ``ChargingDemand/``: Charging demand results:
   - `charging_profiles.csv`: Charging demand time series.
   - `zone_charging_summary.csv`: Aggregated charging demand by zone.
   - `charging_map.html`: Map showing charging demand per location.
 
-- **`EVPV/`** Photovoltaic production and EVPV indicators:
+- ``EVPV/`` Photovoltaic production and EVPV indicators:
   - `pv_production.csv`: Hourly solar output.
   - `complementarity_metrics.csv`: Overlap between PV and EV demand.
   - `pv_ev_match_plot.html`: Time-series plots comparing PV and EV profiles.
 
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^
-data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. The graphs below were created from the raw results using the software **OriginLab** for demonstration purposes.
+Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. The graphs below were created from the raw results using the software OriginLab for demonstration purposes.

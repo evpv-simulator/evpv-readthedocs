@@ -49,40 +49,66 @@ After running the simulation, results are saved in structured subfolders inside 
 Folder structure and contents
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-- ``Mobility/``: Contains data and visualizations related to the simulated mobility demand:
+.. list-table:: Simulation Output Files
+   :widths: 20 30 50
+   :header-rows: 1
 
-  - `mobility_res_TripDistribution_flows.csv`: Origin–destination matrix showing the number of vehicles traveling between each pair of traffic zones. Includes additional metrics such as road distance and Euclidean distance between zones.
+   * - Folder
+     - File
+     - Description
 
-  - `mobility_res_TripDistribution_aggregated_zone_metrics.csv`: Zone-level aggregated statistics: number of vehicles entering and leaving each zone, total distance traveled by incoming and outgoing vehicles, average travel distance per vehicle.
+   * - Mobility/
+     - `mobility_res_TripDistribution_flows.csv`
+     - Origin–destination matrix of vehicle flows between zones, including road and Euclidean distances.
 
-  - `mobility_vis_Region.html`: HTML map displaying key features of each traffic zone.
+   * -
+     - `mobility_res_TripDistribution_aggregated_zone_metrics.csv`
+     - Zone-level stats: total incoming/outgoing trips, total and average travel distances per vehicle.
 
-  - `mobility_vis_VehicleAllocation.html`: HTML map showing the number of vehicles allocated to each zone (i.e., the origin zones for trips).
+   * -
+     - `mobility_vis_Region.html`
+     - Interactive map showing zone features such as population, POIs, and workplaces.
 
+   * -
+     - `mobility_vis_VehicleAllocation.html`
+     - Map of vehicle allocation per zone, based on origin points.
 
-- ``ChargingDemand/``: Contains results related to EV charging demand, both temporally and spatially:
+   * - ChargingDemand/
+     - `charging_res_temporal_demand_profile.csv`
+     - Time series of raw charging power for each vehicle on the days it charges.
 
-  - `charging_res_temporal_demand_profile.csv`: Time series of the raw charging power profile for each individual vehicle.
+   * -
+     - `charging_res_temporal_demand_vehicle_properties.csv`
+     - Vehicle metadata: charging frequency, location, arrival/departure times; cross-referenced by vehicle ID.
 
-  - `charging_res_temporal_demand_vehicle_properties.csv`: Metadata for each vehicle, including: charging frequency (days between charges), charging location, arrival and departure times. This file can be cross-referenced with the previous one using the vehicle ID.
+   * -
+     - `charging_res_temporal_demand_aggregated.csv`
+     - Aggregated charging curves by location type, showing total power, vehicles present, and vehicles charging.
 
-  - `charging_res_temporal_demand_aggregated.csv`:  Aggregated charging load curves by location type (home, work, POI), including: total charging power per time step, number of vehicles present at every location, number of vehicles actively charging.
+   * -
+     - `charging_res_spatial_demand.csv`
+     - Daily charging demand by zone: total energy and number of charging vehicles.
 
-  - `charging_res_spatial_demand.csv`: Aggregated charging demand by traffic zone, including: total charging demand, number of charging vehicles per zone.
+   * -
+     - `charging_vis_TotalDemand.html`
+     - Interactive map of total daily charging demand per zone.
 
-  - `charging_vis_TotalDemand.html`: HTML map showing the total daily charging energy demand.
+   * -
+     - `charging_vis_DemandPerVehicle.html`
+     - Map of average energy demand per charging vehicle per zone.
 
-  - `charging_vis_DemandPerVehicle.html`: HTML map showing the average energy demand per charging vehicle.
+   * -
+     - `charging_vis_NumberVehiclesCharging.html`
+     - Map showing number of vehicles attempting to charge per zone.
 
-  - `charging_vis_NumberVehiclesCharging.html`: HTML map showing the number of vehicles charging.
+   * - EVPV/
+     - `evpv_res_PVProduction.csv`
+     - Hourly PV energy production with performance metrics such as performance ratio and capacity factor.
 
-
-- ``EVPV/``: Contains results related to photovoltaic (PV) energy production and EV–PV synergy indicators:
-
-  - `evpv_res_PVProduction.csv`: Hourly PV production output over a year, including also other metrics (performance ratio, capacity factor, ...).
-
-  - `evpv_res_DailyIndicators.csv`: Daily EV-PV complementarity indicators, including self-sufficiency, self-consumption, and excess PV production.
-
+   * -
+     - `evpv_res_DailyIndicators.csv`
+     - Daily EV–PV synergy indicators: self-sufficiency, self-consumption, and excess PV energy.
+     
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^
 Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. The graphs below were created from the raw results using the software OriginLab for demonstration purposes.

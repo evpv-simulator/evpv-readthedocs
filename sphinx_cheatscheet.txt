@@ -1,5 +1,5 @@
 To udpate the doc: 
 1. Make sure the existing modules are in line with the evpv.rst file
-2. Update the other files
+2. Update the other files: the index should be in line with the file names
 3. Git commit and push to the main repo
 4. Then go to readTheDocs and rebuild

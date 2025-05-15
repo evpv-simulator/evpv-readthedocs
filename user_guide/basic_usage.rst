@@ -3,10 +3,10 @@ Basic usage
 
 After installation, you can run the **EVPV model in command-line mode**. This is ideal for users who are not familiar with Python or who want to quickly conduct a simple case study.
 
-First, create a configuration file by copying an existing example such as the `Addis_Ababa <https://github.com/evpv-simulator/evpv-examples>`_ example case study. Update the configuration file with your own parameters and ensure that all required geospatial input data is available (see the config file and `input/` folder for guidance).
+First, create a configuration file by copying an existing example such as the `AddisAbaba_Simple <https://github.com/evpv-simulator/evpv-examples>`_ example case study. Update the configuration file with your own parameters and ensure that all required geospatial input data is available (see the config file and `input/` folder for guidance).
 
 .. note::
-    We recommend starting by running the Addis Ababa example to get familiar with the workflow. The easiest way to access all necessary files is to `download the GitHub repository containing the examples as a ZIP file <https://github.com/evpv-simulator/evpv-examples/archive/refs/heads/main.zip>`_, extract it and copy the contents of the Addis Ababa example folder into the directory of your choice.
+    We recommend starting by running the Addis Ababa simple example to get familiar with the workflow. The easiest way to access all necessary files is to `download the GitHub repository containing the examples as a ZIP file <https://github.com/evpv-simulator/evpv-examples/archive/refs/heads/main.zip>`_, extract it and copy the contents of the Addis Ababa example folder into the directory of your choice.
 
 Once your config file and geospatial input data are ready, open a terminal, activate your virtual environment (optional), and run:
 

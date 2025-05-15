@@ -32,7 +32,7 @@ Here, you can find the extended documentation of the model, with user guides, ex
    :maxdepth: 2
    :caption: Examples
 
-   examples/example1
+   examples/AddisAbaba_Simple
 
 .. toctree::
    :maxdepth: 2

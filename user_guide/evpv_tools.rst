@@ -14,4 +14,4 @@ As of now, the repository includes the following scripts:
 
 2. ``compare_road_and_euclidian_distance.py``: Compares Euclidean and road distances between randomly generated coordinates within a bounding box.
 
-3. ``analyse_fuel_and_co2_savings.py``: Purpose**: Assesses the fuel cost and CO2 emission savings from switching from ICEVs to EVs based on simulated vehicle flow and travel distances from the EVPV model.
+3. ``analyse_fuel_and_co2_savings.py``: Assesses the fuel cost and CO2 emission savings from switching from ICEVs to EVs based on simulated vehicle flow and travel distances from the EVPV model.

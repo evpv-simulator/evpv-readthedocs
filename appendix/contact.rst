@@ -1,4 +1,4 @@
-References
-==========
+Contact
+=======
 
 ...content goes here...

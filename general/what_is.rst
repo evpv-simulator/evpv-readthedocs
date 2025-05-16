@@ -8,13 +8,16 @@ Tailored especially for urban contexts with limited mobility data, the simulator
 For PV generation, it leverages the capabilities of the **PVLib** library and supports a range of installation archetypes (e.g., rooftop, free-standing PV, etc.).
 
 **Authors:**  
-Jeremy Dumoulin, Alejandro Peña-Bello, Noémie Jeannin, Nicolas Wyrsch
+Jeremy Dumoulin, Alejandro Pena-Bello, Noémie Jeannin, Nicolas Wyrsch
 
 **Lead institution:**  
 EPFL PV-LAB, Switzerland
 
 **Contact:**  
 jeremy[dot]dumoulin[at]epfl[dot]ch
+
+**Github:**  
+Source code, examples, and other related python tools can be found on the `GitHub organization <https://github.com/evpv-simulator>`_ of the project.
 
 Overview of the Model
 ---------------------
@@ -61,16 +64,7 @@ Standout Features
 
 Code
 ----
-The EVPV-Simulator code is fully open-source and provided under GNU General Public License
-
-    the code can’t become part of a closed-source commercial software product
-
-    any future changes and improvements to the code remain free and open
-
-Source code can be downloaded from GitHub.
-
-This model is a work in progress and will be updated accordingly. If you want to subscribe to the openTEPES model updates send an email to andres.ramos@comillas.edu
-
+The EVPV-Simulator code is fully open-source and provided under the GNU General Public License. Source code can be downloaded from `GitHub <https://github.com/evpv-simulator>`_. This model is a work in progress and will be updated regularly.
 
 Citing EVPV-Simulator
 ---------------------

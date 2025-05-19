@@ -110,4 +110,22 @@ Folder structure and contents
 
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^
-Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. The graphs below were created from the raw results using the software OriginLab for demonstration purposes.
+Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. Some results are also readily available as HTML folium maps. The graphs below show some HTML maps and plots were created from the raw results using the software OriginLab for demonstration purposes.
+
+Mobility Demand: Results of the vehicle allocation process and distribution of travel distance by road between the traffic zones.
+
+.. image:: /_static/aa_example_mobility.png
+   :width: 100%
+   :align: center
+
+Charging Demand: Map of the charging demand at workplaces and (aggregated) EV charging load curve at home, work, and POIs.
+
+.. image:: /_static/aa_example_charging.png
+   :width: 100%
+   :align: center
+
+EV-PV Complementarity: Some complementarity indicators calculated for 7 days.
+
+.. image:: /_static/aa_example_evpv.png
+   :width: 100%
+   :align: center

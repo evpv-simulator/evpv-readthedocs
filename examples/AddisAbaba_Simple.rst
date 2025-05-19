@@ -115,7 +115,7 @@ Data is saved in **CSV** format for compatibility with your preferred program (e
 **Mobility Demand**: Results of the vehicle allocation process and distribution of travel distance by road between the traffic zones.
 
 .. image:: /_static/aa_example_mobility.png
-   :width: 100%
+   :width: 95%
    :align: center
 
 **Charging Demand**: Map of the charging demand at workplaces and (aggregated) EV charging load curve at home, work, and POIs.

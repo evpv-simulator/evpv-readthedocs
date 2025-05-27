@@ -100,7 +100,7 @@ PVSimulator
 EVPVSynergies
 ~~~~~~~~~~~~~
 
-.. autoclass:: evpv.evpvSynergies.EVPVSynergies
+.. autoclass:: evpv.evpvsynergies.EVPVSynergies
    :members:
    :undoc-members:
    :show-inheritance:

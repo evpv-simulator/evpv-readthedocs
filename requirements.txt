@@ -1,2 +1,3 @@
 sphinx_rtd_theme
 sphinx-autodoc-typehints
+git+https://github.com/evpv-simulator/evpv.git

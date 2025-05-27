@@ -9,8 +9,8 @@
 import sys
 import os
 import sphinx_rtd_theme
-import evpv.vehicle
 sys.path.insert(0, os.path.abspath('evpv/'))  # Adjust as needed to find evpv/
+import evpv.vehicle
 
 project = 'EVPV'
 copyright = '2024, Jeremy Dumoulin'

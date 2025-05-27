@@ -1,8 +1,20 @@
 API
 ===
 
+This page provides the API Reference for the classes of EV-PV Simulator.  
+
+Each subsection below corresponds to a specific category of classes. 
+All classes are documented using their docstrings and include constructor details, attributes, and available methods.
+
+----
+
+Vehicle definition
+------------------
+
+Classes related to the properties of the EV fleet.
+
 Vehicle
--------
+~~~~~~~
 
 .. autoclass:: evpv.vehicle.Vehicle
    :members:
@@ -11,9 +23,24 @@ Vehicle
    :special-members: __init__
 
 VehicleFleet
-------------
+~~~~~~~~~~~~
 
 .. autoclass:: evpv.vehiclefleet.VehicleFleet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :special-members: __init__
+
+
+Region of interest
+------------------
+
+Classes related to region of interest, and how it is subdivided into traffic zones and populated with aggregated geospatial data.
+
+Region
+~~~~~~
+
+.. autoclass:: evpv.region.Region
    :members:
    :undoc-members:
    :show-inheritance:

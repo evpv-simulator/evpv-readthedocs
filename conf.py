@@ -53,6 +53,7 @@ html_css_files = [
     'custom.css',
 ]
 html_show_sourcelink = False
+html_extra_path = ['_static']
 
 html_context = {}
 

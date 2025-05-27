@@ -1,11 +1,11 @@
 API
 ===
 
-Vehicle
--------
+Vehicle Class
+-------------
 
-.. automodule:: evpv.vehicle
+.. autoclass:: evpv.vehicle.Vehicle
    :members:
    :undoc-members:
    :show-inheritance:
-
+   :special-members: __init__

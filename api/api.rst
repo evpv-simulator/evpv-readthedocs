@@ -31,6 +31,8 @@ VehicleFleet
    :show-inheritance:
    :special-members: __init__
 
+----
+
 
 Region of interest
 ------------------
@@ -41,6 +43,64 @@ Region
 ~~~~~~
 
 .. autoclass:: evpv.region.Region
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :special-members: __init__
+
+----
+
+
+Mobility Demand
+---------------
+
+Classes related to mobility demand simulation for a the given region.
+
+MobilitySimulator
+~~~~~~~~~~~~~~~~~
+
+.. autoclass:: evpv.mobilitysimulator.MobilitySimulator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :special-members: __init__
+
+----
+
+Charging Demand
+---------------
+
+Classes related to charging demand simulation.
+
+ChargingSimulator
+~~~~~~~~~~~~~~~~~
+
+.. autoclass:: evpv.chargingsimulator.ChargingSimulator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :special-members: __init__
+
+----
+
+PV Simulation and EV-PV Complementarity
+---------------------------------------
+
+Classes related to PV Production and EV-PV Complementarity indicators.
+
+PVSimulator
+~~~~~~~~~~~
+
+.. autoclass:: evpv.pvsimulator.PVSimulator
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :special-members: __init__
+
+EVPVSynergies
+~~~~~~~~~~~~~
+
+.. autoclass:: evpv.evpvSynergies.EVPVSynergies
    :members:
    :undoc-members:
    :show-inheritance:

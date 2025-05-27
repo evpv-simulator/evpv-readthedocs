@@ -1,13 +1,16 @@
 version: 2
+
 build:
   os: ubuntu-22.04
   tools:
     python: "3.12"
+
 python:
+  requirements: requirements.txt   # this is for pip installing from requirements.txt
   install:
-    - requirements: requirements.txt
     - method: pip
       packages:
         - git+https://github.com/evpv-simulator/evpv.git
+
 sphinx:
   configuration: conf.py

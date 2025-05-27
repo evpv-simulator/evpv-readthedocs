@@ -9,7 +9,7 @@
 import sys
 import os
 import sphinx_rtd_theme
-sys.path.insert(0, os.path.abspath("evpv"))  # Adjust if your submodule is deeper
+sys.path.insert(0, os.path.abspath('../'))  # Adjust as needed to find evpv/
 
 project = 'EVPV'
 copyright = '2024, Jeremy Dumoulin'
@@ -18,7 +18,7 @@ author = 'Jeremy Dumoulin'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', 'sphinx.ext.mathjax']
+extensions = ['sphinx.ext.todo', 'sphinx.ext.viewcode', 'sphinx.ext.autodoc', "sphinx.ext.napoleon", 'sphinx.ext.mathjax', "sphinx_autodoc_typehints",]
 
 mathjax_path = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 mathjax3_config = {

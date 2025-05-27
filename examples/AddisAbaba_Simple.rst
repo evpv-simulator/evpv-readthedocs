@@ -110,7 +110,7 @@ Folder structure and contents
 
 Examples visualization
 ^^^^^^^^^^^^^^^^^^^^^^
-Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. Some results are also readily available as HTML folium maps. The graphs below show some HTML maps and plots were created from the raw results using the software OriginLab for demonstration purposes.
+Data is saved in **CSV** format for compatibility with your preferred program (e.g., Excel, Python, R, etc.) for analysis and graphing. Some results are also readily available as HTML folium maps. The graphs below show some HTML maps and plots created from the raw results for demonstration purposes.
 
 **Mobility Demand**: Results of the vehicle allocation process and distribution of travel distance by road between the traffic zones.
 

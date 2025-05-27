@@ -5,7 +5,7 @@ Getting python
 --------------
 First of all, ensure Python is installed on your system. This project was developped with **Python 3.12**. Other versions may not be compatible. 
 
-If it is your first time with Python, we recommend installing python via `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_. Many tutorials are available online to help you with this installation process (see for example `this one <https://www.youtube.com/watch?v=oHHbsMfyNR4>`_. During the installation, make sure to select "Add Miniconda to PATH".
+If it is your first time with Python, we recommend installing python via `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_. Many tutorials are available online to help you with this installation process (see for example `this one <https://www.youtube.com/watch?v=oHHbsMfyNR4>`_). During the installation, make sure to select "Add Miniconda to PATH".
 
 .. note::
    **Miniconda** includes ``conda``, which allows you to create a dedicated Python environment for ``evpv-simulator``.

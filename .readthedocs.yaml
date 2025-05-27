@@ -6,5 +6,8 @@ build:
 python:
   install:
     - requirements: requirements.txt
+    - method: pip
+      packages:
+        - git+https://github.com/evpv-simulator/evpv.git
 sphinx:
   configuration: conf.py

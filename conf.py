@@ -9,7 +9,6 @@
 import sys
 import os
 import sphinx_rtd_theme
-sys.path.insert(0, os.path.abspath('../'))  # Adjust as needed to find evpv/
 
 project = 'EVPV'
 copyright = '2024, Jeremy Dumoulin'

@@ -12,6 +12,7 @@ Here, you can find the extended documentation of the model, with user guides, ex
 .. note::
    This project is under active development. Expect some small mistakes and empty entries. Do not hesitate to report any issue!
 
+
 .. toctree::
    :maxdepth: 2
    :caption: General

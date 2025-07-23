@@ -11,3 +11,48 @@ Here, you can find the extended documentation of the model, with user guides, ex
 
 .. note::
    This project is under active development. Expect some small mistakes and empty entries. Do not hesitate to report any issue!
+
+.. toctree::
+   :maxdepth: 2
+   :caption: General
+
+   Home <self>
+   general/what_is
+   general/release_notes
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Guide
+
+   user_guide/installation
+   user_guide/basic_usage
+   user_guide/advanced_usage
+   user_guide/evpv_tools
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Examples
+
+   examples/AddisAbaba_Simple
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Methodology
+
+   methodology/overview
+   methodology/mobility_demand
+   methodology/charging_demand
+   methodology/epvp_complementarity
+
+.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
+   api/api
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Appendix
+
+   appendix/references
+   appendix/contact

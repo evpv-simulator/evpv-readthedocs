@@ -18,8 +18,5 @@ The **evpv-simulator** model has three main objectives and corresponding outputs
 
 .. centered:: *EVPV-Simulator methodology overview. Note that some optional input parameters and additional outputs are not shown.*
 
-For more details regarding the different modelling steps, please refer to the dedicated sections or the reference paper: 
-
-Jérémy Dumoulin et al. *A modeling framework to support the electrification of private transport in African cities: a case study of Addis Ababa*.  
-*arXiv preprint* arXiv:2503.03671, 2025.  
-`https://doi.org/10.48550/arXiv.2503.03671 <https://doi.org/10.48550/arXiv.2503.03671>`_
+.. note::
+   For more details regarding the different modelling steps, please refer to the dedicated sections or the reference paper: Jérémy Dumoulin et al. *A modeling framework to support the electrification of private transport in African cities: a case study of Addis Ababa*.*arXiv preprint* arXiv:2503.03671, 2025. `https://doi.org/10.48550/arXiv.2503.03671 <https://doi.org/10.48550/arXiv.2503.03671>`_

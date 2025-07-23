@@ -41,9 +41,6 @@ Here, you can find the extended documentation of the model, with user guides, ex
    :caption: Methodology
 
    methodology/overview
-   methodology/mobility_demand
-   methodology/charging_demand
-   methodology/epvp_complementarity
 
 .. toctree::
    :maxdepth: 2
